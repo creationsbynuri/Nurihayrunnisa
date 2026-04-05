@@ -1,1 +1,694 @@
-<
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hayrunnisa & Nuri — April 2026 ✨</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #faf6f0; --warm: #f0e8da; --blush: #e8c4a0;
+    --rose: #c4896a; --deep: #2c1a0e; --muted: #7a5c48; --soft: #f7f0e8;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--deep); overflow-x:hidden; }
+  body::before {
+    content:''; position:fixed; inset:0; pointer-events:none; z-index:999; opacity:0.4;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+  header { text-align:center; padding:80px 24px 60px; position:relative; }
+  header::after { content:''; position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:60px; height:1px; background:var(--blush); }
+  .eyebrow { font-size:11px; font-weight:500; letter-spacing:4px; text-transform:uppercase; color:var(--rose); margin-bottom:20px; opacity:0; animation:fadeUp 0.8s ease forwards 0.1s; }
+  h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(48px,8vw,80px); font-weight:300; line-height:1.1; color:var(--deep); opacity:0; animation:fadeUp 0.8s ease forwards 0.2s; }
+  h1 em { font-style:italic; color:var(--rose); }
+  .header-sub { font-size:15px; color:var(--muted); margin-top:16px; font-weight:300; opacity:0; animation:fadeUp 0.8s ease forwards 0.3s; line-height:1.7; }
+  .pills { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:24px; opacity:0; animation:fadeUp 0.8s ease forwards 0.4s; }
+  .pill { display:inline-flex; align-items:center; gap:6px; background:var(--warm); border:1px solid var(--blush); border-radius:100px; padding:7px 16px; font-size:12px; color:var(--muted); }
+  main { max-width:860px; margin:0 auto; padding:60px 24px 100px; }
+  .sec-label { display:flex; align-items:center; gap:16px; margin:32px 0 0; opacity:0; animation:fadeUp 0.7s ease forwards; }
+  .sec-label span { font-size:10px; font-weight:500; letter-spacing:3px; text-transform:uppercase; color:var(--rose); white-space:nowrap; }
+  .sec-label::before,.sec-label::after { content:''; flex:1; height:1px; background:var(--warm); }
+  .day-card { margin-bottom:0; opacity:0; animation:fadeUp 0.7s ease forwards; }
+  .day-card:nth-child(1){animation-delay:0.05s} .day-card:nth-child(2){animation-delay:0.1s}
+  .day-card:nth-child(3){animation-delay:0.15s} .day-card:nth-child(4){animation-delay:0.2s}
+  .day-card:nth-child(5){animation-delay:0.25s} .day-card:nth-child(6){animation-delay:0.3s}
+  .day-card:nth-child(7){animation-delay:0.35s} .day-card:nth-child(8){animation-delay:0.4s}
+  .day-card:nth-child(9){animation-delay:0.45s}
+  .day-inner { background:white; border:1px solid var(--warm); border-radius:20px; overflow:hidden; transition:box-shadow 0.3s,transform 0.3s; }
+  .day-inner:hover { box-shadow:0 12px 40px rgba(196,137,106,0.12); transform:translateY(-2px); }
+  .day-header { display:flex; align-items:center; justify-content:space-between; padding:24px 28px; border-bottom:1px solid var(--warm); background:var(--soft); flex-wrap:wrap; gap:12px; }
+  .day-left { display:flex; align-items:baseline; gap:14px; }
+  .day-number { font-family:'Cormorant Garamond',serif; font-size:52px; font-weight:300; color:var(--blush); line-height:1; }
+  .day-info h2 { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:400; color:var(--deep); }
+  .day-info span { font-size:12px; color:var(--muted); letter-spacing:1.5px; text-transform:uppercase; }
+  .badges { display:flex; flex-wrap:wrap; gap:6px; }
+  .badge { padding:5px 13px; border-radius:100px; font-size:11px; font-weight:500; white-space:nowrap; }
+  .b-arrival{background:#fce8e8;color:#c0504a}
+  .b-football{background:#e8f5e9;color:#2e7d32}
+  .b-trip{background:#e8f0fc;color:#4a6ec0}
+  .b-date{background:#f0e8fc;color:#7a4ac0}
+  .b-sport{background:#e8faf4;color:#2a9d6e}
+  .b-concert{background:#1a1a2e;color:#e0b0ff}
+  .b-outlet{background:#fff0f5;color:#c0406a}
+  .b-surprise{background:linear-gradient(135deg,#fce8d0,#fcd4d4);color:#b8533a}
+  .b-relax{background:#e8fce8;color:#4ac06e}
+  .b-last{background:#f0f0f0;color:#606060}
+  .b-fun{background:#fff0d0;color:#a06000}
+  .b-work{background:#eef3fb;color:#4a6096}
+  .day-body { padding:28px; }
+  .timeline { display:flex; flex-direction:column; gap:20px; }
+  .timeline-item { display:flex; gap:16px; }
+  .ttime { font-size:11px; font-weight:500; color:var(--rose); letter-spacing:1px; text-transform:uppercase; min-width:64px; padding-top:2px; white-space:nowrap; }
+  .tdot { flex-shrink:0; width:8px; height:8px; border-radius:50%; background:var(--blush); margin-top:6px; position:relative; }
+  .tdot::after { content:''; position:absolute; top:8px; left:3.5px; width:1px; height:calc(100% + 12px); background:var(--warm); }
+  .timeline-item:last-child .tdot::after { display:none; }
+  .tcontent h3 { font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:400; color:var(--deep); margin-bottom:4px; }
+  .tcontent p { font-size:13px; color:var(--muted); line-height:1.6; }
+  .option-box { margin-top:16px; display:flex; flex-direction:column; gap:10px; }
+  .option { background:var(--soft); border:1px solid var(--warm); border-radius:12px; padding:14px 16px; }
+  .option-label { font-size:10px; font-weight:500; letter-spacing:2px; text-transform:uppercase; color:var(--rose); margin-bottom:6px; }
+  .option p { font-size:13px; color:var(--muted); line-height:1.6; }
+  .outfit-box { margin-top:20px; background:var(--soft); border:1px solid var(--warm); border-radius:12px; padding:16px 20px; display:flex; gap:20px; }
+  .op { flex:1; }
+  .op h4 { font-size:10px; font-weight:500; letter-spacing:2px; text-transform:uppercase; color:var(--rose); margin-bottom:8px; }
+  .op p { font-size:12px; color:var(--muted); line-height:1.7; }
+  .odiv { width:1px; background:var(--blush); margin:4px 0; }
+  .surprise-box { margin-top:20px; padding:20px; background:linear-gradient(135deg,#fff8f4,#fdf4ee); border:1px solid var(--blush); border-radius:14px; text-align:center; }
+  .surprise-box p { font-family:'Cormorant Garamond',serif; font-size:20px; font-style:italic; color:var(--rose); }
+  .info-block { margin-top:20px; padding:16px 18px; border-radius:12px; border:1px solid; font-size:13px; line-height:1.6; }
+  .info-block strong { display:block; margin-bottom:4px; font-weight:500; }
+  .info-block.purple{border-color:#c8a0e8;background:#f8f0ff;color:#4a1a7a}
+  .info-block.pink{border-color:#f0a0c0;background:#fff0f5;color:#7a1040}
+  footer { text-align:center; padding:48px 24px; font-family:'Cormorant Garamond',serif; font-size:18px; font-style:italic; color:var(--muted); }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+  @media(max-width:600px){
+    .outfit-box{flex-direction:column} .odiv{width:100%;height:1px}
+    .day-header{flex-direction:column;align-items:flex-start} .ttime{min-width:48px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">14. – 22. April 2026 · Mainz</p>
+  <h1><em>Hayrunnisa</em> & <em>Nuri</em></h1>
+  <p class="header-sub">Ich hab uns eine Woche geplant — Tage zum Erinnern 🤍<br><span style="font-size:12px;opacity:0.7">Alle Uhrzeiten sind Richtwerte — wir sind flexibel 🙂</span></p>
+  <div class="pills">
+    <div class="pill">🌤 15–20 °C</div>
+    <div class="pill">⚽ Fußball</div>
+    <div class="pill">🎾 Padel Tennis Sa.</div>
+    <div class="pill">🎳 Funfabrik Wiesbaden Mi.</div>
+    <div class="pill">🎤 Capo Konzert So.</div>
+    <div class="pill">🛍️ Outlet / Mannheim Do.</div>
+    <div class="pill">🌆 Frankfurt Mo.</div>
+    <div class="pill">🏃 Joggen Di.</div>
+    <div class="pill">✨ Überraschung Sa.</div>
+  </div>
+</header>
+
+<main style="display:flex; flex-direction:column; gap:40px;">
+
+  <div class="sec-label" style="animation-delay:0.05s"><span>Ankunftstag</span></div>
+
+  <div class="day-card">
+    <div class="day-inner">
+      <div class="day-header">
+        <div class="day-left">
+          <div class="day-number">14</div>
+          <div class="day-info">
+            <h2>Dienstag — Willkommen zurück 🌹</h2>
+            <span>Flughafen · Ankommen · Erster Abend</span>
+          </div>
+        </div>
+        <div class="badges">
+          <div class="badge b-arrival">✈️ Ankunft</div>
+          <div class="badge b-football">⚽ Training 19:30</div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="ttime">16:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Ich hole dich vom Flughafen ab</h3>
+              <p>Ich bin am Ausgang und warte auf dich. Erstes Wiedersehen nach der Zeit in der Türkei — ich freu mich.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">17:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir essen zusammen</h3>
+              <p>Direkt nach dem Flughafen setzen wir uns irgendwo hin — entspannt ankommen, reden, die erste Stunde zusammen genießen.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">18:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Ich bringe dich nach Hause</h3>
+              <p>Du kannst duschen, auspacken, zur Ruhe kommen. Nach der langen Reise hast du das verdient.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">19:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Ich gehe zum Training — du entscheidest</h3>
+              <p>Du hast zwei Optionen — ganz wie du magst:</p>
+            </div>
+          </div>
+        </div>
+        <div class="option-box">
+          <div class="option">
+            <div class="option-label">⚽ Option A — Du kommst mit zum Training</div>
+            <p>Du schaust von der Seite zu und siehst mich beim Training. Danach fahre ich dich nach Hause.</p>
+          </div>
+          <div class="option">
+            <div class="option-label">🛋️ Option B — Du bleibst zu Hause</div>
+            <p>Du ruhst dich aus. Ich komme nach dem Training direkt zu dir.</p>
+          </div>
+        </div>
+        <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
+          <div class="op"><h4>👔 Ich</h4><p>Zum Flughafen: hellbeige Chinos, weißes Shirt, saubere Sneaker. Dann Trainingsoutfit.</p></div>
+          <div class="odiv"></div>
+          <div class="op"><h4>👗 Du</h4><p>Reise-Outfit — kein Druck. Leggings, Oversized Hoodie, weiße Sneaker. Comfortable & cute.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-label" style="animation-delay:0.1s"><span>Die Woche</span></div>
+
+  <!-- 15. MI -->
+
+  <div class="day-card">
+    <div class="day-inner">
+      <div class="day-header">
+        <div class="day-left">
+          <div class="day-number">15</div>
+          <div class="day-info">
+            <h2>Mittwoch — Fokus Date, Funfabrik & Sonnenuntergang</h2>
+            <span>Topify Media · Wiesbaden · Rhein</span>
+          </div>
+        </div>
+        <div class="badges">
+          <div class="badge b-work">💼 Fokus Date</div>
+          <div class="badge b-fun">🎳 Funfabrik</div>
+          <div class="badge b-relax">🌅 Sonnenuntergang</div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="ttime">13:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Fokus Date — wir arbeiten zusammen</h3>
+              <p>Du kommst mit in mein Büro — ich an meine Projekte, du kannst für die Uni arbeiten oder einfach dabei sein. Nebeneinander produktiv sein, Kaffee dabei. Das ist echter Alltag zusammen.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">16:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Funfabrik Wiesbaden 🎳</h3>
+              <p>Ca. 20 Min. von Mainz — Bowling, Billard, Darts, Tischtennis alles unter einem Dach. Wer verliert zahlt das Eis danach 😄</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">20:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Sonnenuntergang am Rhein 🌅</h3>
+              <p>Auf dem Weg zurück halten wir kurz am Rhein an — Sonnenuntergang zusammen anschauen. Einer dieser einfachen Momente die man nicht vergisst.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">21:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Abendessen</h3>
+              <p>Schönes Restaurant in Mainz oder Wiesbaden zum Abschluss.</p>
+            </div>
+          </div>
+        </div>
+        <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
+          <div class="op"><h4>👔 Ich</h4><p>Leichte Chinos, weiches Shirt, weiße Sneaker. Locker und entspannt.</p></div>
+          <div class="odiv"></div>
+          <div class="op"><h4>👗 Du</h4><p>Jeans, lässiges Top oder Bluse, weiße Sneaker. Funfabrik-tauglich aber trotzdem cute.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 16. DO -->
+
+  <div class="day-card">
+    <div class="day-inner">
+      <div class="day-header">
+        <div class="day-left">
+          <div class="day-number">16</div>
+          <div class="day-info">
+            <h2>Donnerstag — Shopping Date</h2>
+            <span>Zweibrücken Outlet oder Mannheim · Gegenseitig stylen</span>
+          </div>
+        </div>
+        <div class="badges">
+          <div class="badge b-outlet">🛍️ Shopping Date</div>
+          <div class="badge b-trip">🚗 Tagesausflug</div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="info-block pink">
+          <strong>💡 Das Konzept</strong>
+          Wir stylen uns gegenseitig — ich such dir Outfits raus, du mir. Anprobieren, bewerten, lachen. Wer den besseren Look findet wählt das nächste Restaurant 😄
+        </div>
+        <div class="option-box" style="margin-top:16px">
+          <div class="option">
+            <div class="option-label">🛍️ Option A — Zweibrücken Fashion Outlet</div>
+            <p>Ca. 1,5h · 200+ Stores, große Auswahl, viel Platz. Perfekt für das gegenseitige Styling.</p>
+          </div>
+          <div class="option">
+            <div class="option-label">🏙️ Option B — Mannheim City</div>
+            <p>Ca. 45 Min. · Planken-Einkaufsstraße, urban & stylisch, tolle Cafés dazwischen. Mehr Stadtflair.</p>
+          </div>
+        </div>
+        <div class="timeline" style="margin-top:20px">
+          <div class="timeline-item">
+            <div class="ttime">12:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir fahren los</h3>
+              <p>Gute Playlist, Snacks für die Fahrt, entspannte Energie.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">14:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir shoppen — gegenseitig Outfits aussuchen</h3>
+              <p>20 Minuten getrennt, dann Umkleidekabine. Ich bewerte deinen Look, du meinen. Ehrlich bleiben 😄</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">17:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Neue Outfits direkt anziehen & Eis holen</h3>
+              <p>Die neuen Sachen direkt tragen — und spontan Eis holen. Bestes Gefühl.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">19:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Abendessen & Rückfahrt</h3>
+              <p>Gut essen vor Ort, dann entspannt zurück nach Mainz.</p>
+            </div>
+          </div>
+        </div>
+        <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
+          <div class="op"><h4>👔 Ich</h4><p>Neutral & kombinierbar — weißes Shirt, hellgraue Chinos, weiße Sneaker.</p></div>
+          <div class="odiv"></div>
+          <div class="op"><h4>👗 Du</h4><p>Basis-Outfit: schwarze Highwaist-Jeans, einfaches Top, Sneaker. Einfach wechseln ist das Ziel.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 17. FR -->
+
+  <div class="day-card">
+    <div class="day-inner">
+      <div class="day-header">
+        <div class="day-left">
+          <div class="day-number">17</div>
+          <div class="day-info">
+            <h2>Freitag — Training + schicker Abend</h2>
+            <span>Entspannter Nachmittag · Training 19:30 · Rausgehen</span>
+          </div>
+        </div>
+        <div class="badges">
+          <div class="badge b-football">⚽ Training 19:30</div>
+          <div class="badge b-date">🌙 Schicker Abend</div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="ttime">13:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Entspannter Nachmittag zusammen</h3>
+              <p>Kein großer Plan — wir holen uns einen Kaffee, spazieren ein bisschen, einfach zusammen sein. Heute darf es ruhig sein.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">19:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Ich gehe zum Training — du entscheidest wieder</h3>
+              <p>Entweder du kommst mit und schaust zu, oder du machst dich schon fertig für den Abend.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">21:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir gehen beide schick raus</h3>
+              <p>Eine schöne Bar mit guter Atmosphäre — gute Mocktails, gute Musik, gutes Licht. Falls du beim Training dabei warst: direkt in Frankfurt eine Bar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
+          <div class="op"><h4>👔 Ich</h4><p>Abends: schwarze Slim-Jeans, weißes Hemd, Chelsea Boots.</p></div>
+          <div class="odiv"></div>
+          <div class="op"><h4>👗 Du</h4><p>Abends: elegantes Minikleid oder Satin-Top mit enger Hose, schwarze Strumpfhose, Ankle Boots. Du siehst aus wie immer — wunderschön.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-label" style="animation-delay:0.2s"><span>Wochenende</span></div>
+
+  <!-- 18. SA -->
+
+  <div class="day-card">
+    <div class="day-inner">
+      <div class="day-header">
+        <div class="day-left">
+          <div class="day-number">18</div>
+          <div class="day-info">
+            <h2>Samstag — Düsseldorf + Überraschung ✨</h2>
+            <span>Padel Tennis · Königsallee · Rheinpromenade</span>
+          </div>
+        </div>
+        <div class="badges">
+          <div class="badge b-trip">🚗 Düsseldorf</div>
+          <div class="badge b-sport">🎾 Padel Tennis</div>
+          <div class="badge b-surprise">✨ Überraschung</div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="ttime">09:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir starten früh nach Düsseldorf</h3>
+              <p>Ca. 2h Fahrt — ich pack Snacks ein, du suchst die Playlist aus 😄</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">11:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir brunchen in Düsseldorf</h3>
+              <p>Ankommen, in Ruhe essen — Altstadt oder Medienhafen. Einen schönen Spot suchen und genießen.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">13:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Padel Tennis 🎾</h3>
+              <p>Ich hab einen Court gebucht — ca. 1,5h spielen. Sportklamotten, Sonne, Spaß. Lachen wenn einer einen Ball verreißt 😄</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">15:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir ziehen uns um & gehen auf die Königsallee</h3>
+              <p>Kurz frisch machen, dann die Kö entlang — Schaufenster, Fotos, Kaffee/Tee. Vibe wechselt von sportlich zu elegant.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">19:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Rheinpromenade & Dinner 🌹</h3>
+              <p>Wir spazieren kurz an der Rheinpromenade — ich hab eine kleine Überraschung für dich. Danach hab ich einen Tisch reserviert. Kerzen, Atmosphäre, gutes Essen.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">Spät</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir fahren zurück nach Mainz</h3>
+              <p>Entspannt zurück — mit einem Lächeln 🤍</p>
+            </div>
+          </div>
+        </div>
+        <div class="surprise-box">
+          <p>„Mehr wird nicht verraten — lass dich einfach überraschen." 🌹</p>
+        </div>
+        <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
+          <div class="op"><h4>👔 Ich</h4><p>Padel: Sportklamotten. Nachmittags: dunkelblue Slimfit-Hose, cremefarbenes Leinenhemd, Chelsea Boots.</p></div>
+          <div class="odiv"></div>
+          <div class="op"><h4>👗 Du</h4><p>Padel: Sportleggings, Hoodie. Nachmittags: florales Midikleid, schwarze Strumpfhose, Ankle Boots. Romantisch & wunderschön.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 19. SO -->
+
+  <div class="day-card">
+    <div class="day-inner">
+      <div class="day-header">
+        <div class="day-left">
+          <div class="day-number">19</div>
+          <div class="day-info">
+            <h2>Sonntag — Mein Spiel + Capo Konzert 🎤</h2>
+            <span>13:00 Kelsterbach · Frankfurt · 20:00 Offenbach</span>
+          </div>
+        </div>
+        <div class="badges">
+          <div class="badge b-football">⚽ Spiel 13:00</div>
+          <div class="badge b-concert">🎤 Capo 20:00</div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="ttime">Morgens</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir frühstücken zusammen</h3>
+              <p>Ruhiger Start in den Tag — Energie für das Spiel und den Abend.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">13:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Du schaust mir beim Spiel zu — Kelsterbach</h3>
+              <p>Anfeuern erwünscht 😄 Nach dem Abpfiff komme ich direkt zu dir.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">~15:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir bleiben im Raum Frankfurt</h3>
+              <p>Wir essen gut in Frankfurt/Umgebung, ruhen uns kurz aus, sammeln Energie für das Konzert. Kein Umweg nach Mainz nötig.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">18:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir fahren nach Offenbach</h3>
+              <p>Ca. 15–20 Min. von Frankfurt. Früh genug um entspannt anzukommen.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">20:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>🎤 Capo Konzert — Offenbach</h3>
+              <p>Laute Musik, Energie der Masse, ein unvergesslicher Abend zusammen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="info-block purple">
+          <strong>🎤 Konzert-Tipp</strong>
+          Clips filmen — aber auch einfach den Moment genießen. Beides 😄
+        </div>
+        <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
+          <div class="op"><h4>👔 Ich</h4><p>Konzert: schwarze Baggy-Jeans, Graphic Tee oder Hoodie, frische Sneaker.</p></div>
+          <div class="odiv"></div>
+          <div class="op"><h4>👗 Du</h4><p>Konzert: schwarzes Minikleid oder Cargo-Style, schwarze Strumpfhose, Doc Martens oder Chunky-Sneaker.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 20. MO -->
+
+  <div class="day-card">
+    <div class="day-inner">
+      <div class="day-header">
+        <div class="day-left">
+          <div class="day-number">20</div>
+          <div class="day-info">
+            <h2>Montag — Frankfurt + IKEA Date</h2>
+            <span>Museumsufer · Sachsenhausen · IKEA Rödelheim</span>
+          </div>
+        </div>
+        <div class="badges">
+          <div class="badge b-trip">🌆 Frankfurt</div>
+          <div class="badge" style="background:#fff0e0;color:#b06010">🛋️ IKEA Date</div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="ttime">13:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir fahren mit dem Zug nach Frankfurt</h3>
+              <p>30 Min. — easy und schnell. Entspannter Tagesausflug.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">14:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir spazieren am Museumsufer</h3>
+              <p>Entlang des Mains — Frankfurter Skyline genießen, Fotos machen.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">16:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir gehen zu IKEA Rödelheim</h3>
+              <p>Durch die Showrooms laufen und über ein gemeinsames Zuhause träumen — „Das Sofa würde ich nehmen." „Nein, das hier." Wer hat den besseren Geschmack? 😄</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">19:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir essen in Sachsenhausen</h3>
+              <p>Kleine Gassen, tolle Atmosphäre, gute Restaurants. Schöner Abschluss des Tages.</p>
+            </div>
+          </div>
+        </div>
+        <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
+          <div class="op"><h4>👔 Ich</h4><p>Schwarze Hose, weißes Hemd (halb offen), schwarze Leder-Sneaker.</p></div>
+          <div class="odiv"></div>
+          <div class="op"><h4>👗 Du</h4><p>Enge Jeans dunkelblau, Satin-Top oder elegante Bluse, kleine Tasche, nude Sneaker.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 21. DI -->
+
+  <div class="day-card">
+    <div class="day-inner">
+      <div class="day-header">
+        <div class="day-left">
+          <div class="day-number">21</div>
+          <div class="day-info">
+            <h2>Dienstag — Joggen + letzter Abend</h2>
+            <span>Rheinufer · Training 19:30 · Draußen essen</span>
+          </div>
+        </div>
+        <div class="badges">
+          <div class="badge b-sport">🏃 Joggen</div>
+          <div class="badge b-football">⚽ Training 19:30</div>
+          <div class="badge b-relax">🌿 Letzter Abend</div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="ttime">13:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir joggen am Rheinufer 🏃</h3>
+              <p>Beide in Sportklamotten — entspanntes Joggen entlang der Rheinpromenade. Kein Wettkampf, einfach nebeneinander laufen. Danach dehnen wir uns zusammen und setzen uns kurz auf eine Bank.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">15:00</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir gehen ins Café</h3>
+              <p>Kurz frisch machen, dann Kaffee/Tee. Die besten Fotos und Momente der Woche zusammen anschauen und lachen.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">19:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Ich gehe zum Training — du entscheidest</h3>
+              <p>Mitschauen oder zu Hause warten — ganz wie du magst.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="ttime">21:30</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Letzter gemeinsamer Abend — wir essen draußen</h3>
+              <p>Ein schönes Restaurant als Abschluss der Woche. Gut essen, reden, lachen — die besten Momente nochmal durchgehen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
+          <div class="op"><h4>👔 Ich</h4><p>Joggen: Sporthose, enges Shirt, Laufschuhe. Abends: Jeans, cleanes Shirt, Sneaker.</p></div>
+          <div class="odiv"></div>
+          <div class="op"><h4>👗 Du</h4><p>Joggen: Sportleggings, Crop-Hoodie oder Sport-Top, Laufschuhe. Abends: leichtes Kleid oder schicke Hose mit Bluse.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 22. MI -->
+
+  <div class="day-card">
+    <div class="day-inner">
+      <div class="day-header">
+        <div class="day-left">
+          <div class="day-number">22</div>
+          <div class="day-info">
+            <h2>Mittwoch — Ausklingen</h2>
+            <span>Letztes gemeinsames Mittagessen</span>
+          </div>
+        </div>
+        <div class="badges">
+          <div class="badge b-last">🌸 Letzter Tag</div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="ttime">Mittag</div>
+            <div class="tdot"></div>
+            <div class="tcontent">
+              <h3>Wir essen nochmal zusammen</h3>
+              <p>Einen Kaffee trinken, die Woche entspannt ausklingen lassen — mit einem Lächeln.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  „Es sind nicht die großen Gesten, die zählen —<br>
+  <em>es sind die vielen kleinen Momente dazwischen.</em>"<br><br>
+  🤍 Hayrunnisa & Nuri · April 2026
+</footer>
+
+</body>
+</html>
