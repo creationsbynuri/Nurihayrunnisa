@@ -80,6 +80,11 @@
   .info-block strong { display:block; margin-bottom:4px; font-weight:500; }
   .info-block.purple{border-color:#c8a0e8;background:#f8f0ff;color:#4a1a7a}
   .info-block.pink{border-color:#f0a0c0;background:#fff0f5;color:#7a1040}
+  .photo-box { margin-top:16px; padding:14px 18px; background:#fff8f4; border:1px solid #f0d0b8; border-radius:12px; }
+  .photo-box h4 { font-size:10px; font-weight:500; letter-spacing:2px; text-transform:uppercase; color:var(--rose); margin-bottom:10px; }
+  .photo-list { display:flex; flex-direction:column; gap:6px; }
+  .photo-item { display:flex; align-items:flex-start; gap:8px; font-size:12px; color:var(--muted); line-height:1.5; }
+  .photo-item::before { content:"📸"; font-size:12px; flex-shrink:0; margin-top:1px; }
   footer { text-align:center; padding:48px 24px; font-family:'Cormorant Garamond',serif; font-size:18px; font-style:italic; color:var(--muted); }
   @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
   @media(max-width:600px){
@@ -106,6 +111,10 @@
     <div class="pill">✨ Überraschung Sa.</div>
   </div>
 </header>
+
+<div style="width:100%;max-width:500px;margin:40px auto 0;padding:0 24px;">
+  <img src="hero.jpg" alt="Hayrunnisa & Nuri" style="width:100%;border-radius:24px;object-fit:cover;box-shadow:0 20px 60px rgba(44,26,14,0.15);display:block;">
+</div>
 
 <main style="display:flex; flex-direction:column; gap:40px;">
 
@@ -171,6 +180,15 @@
             <p>Du ruhst dich aus. Ich komme nach dem Training direkt zu dir.</p>
           </div>
         </div>
+        <div class="photo-box">
+          <h4>📸 Fotos & Videos</h4>
+          <div class="photo-list">
+            <div class="photo-item">Selfie direkt am Flughafen-Ausgang — erstes Wiedersehen festhalten</div>
+            <div class="photo-item">Kurzes Video zusammen — erster gemeinsamer Moment nach der Reise</div>
+            <div class="photo-item">Foto beim Essen — natürlich und ungeplant</div>
+            <div class="photo-item">Abendspaziergang am Rhein — warmes Licht</div>
+          </div>
+        </div>
         <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
           <div class="op"><h4>👔 Ich</h4><p>Zum Flughafen: hellbeige Chinos, weißes Shirt, saubere Sneaker. Dann Trainingsoutfit.</p></div>
           <div class="odiv"></div>
@@ -233,6 +251,13 @@
               <h3>Abendessen</h3>
               <p>Schönes Restaurant in Mainz oder Wiesbaden zum Abschluss.</p>
             </div>
+          </div>
+        </div>
+        <div class="photo-box">
+          <h4>📸 Fotos & Videos</h4>
+          <div class="photo-list">
+            <div class="photo-item">Video vom Bowling/Darts in der Funfabrik — gegenseitig filmen</div>
+            <div class="photo-item">Foto beim Sonnenuntergang am Rhein</div>
           </div>
         </div>
         <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
@@ -310,6 +335,13 @@
             </div>
           </div>
         </div>
+        <div class="photo-box">
+          <h4>📸 Fotos & Videos</h4>
+          <div class="photo-list">
+            <div class="photo-item">Video — Reaktion auf das Outfit das ich dir ausgesucht hab</div>
+            <div class="photo-item">Mirror Foto in den neuen Outfits</div>
+          </div>
+        </div>
         <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
           <div class="op"><h4>👔 Ich</h4><p>Neutral & kombinierbar — weißes Shirt, hellgraue Chinos, weiße Sneaker.</p></div>
           <div class="odiv"></div>
@@ -361,6 +393,13 @@
               <h3>Wir gehen beide schick raus</h3>
               <p>Eine schöne Bar mit guter Atmosphäre — gute Mocktails, gute Musik, gutes Licht. Falls du beim Training dabei warst: direkt in Frankfurt eine Bar.</p>
             </div>
+          </div>
+        </div>
+        <div class="photo-box">
+          <h4>📸 Fotos & Videos</h4>
+          <div class="photo-list">
+            <div class="photo-item">OOTD Foto beider vor dem Ausgehen — schick angezogen</div>
+            <div class="photo-item">Bar-Foto — Abendlicht, gute Atmosphäre</div>
           </div>
         </div>
         <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
@@ -446,6 +485,14 @@
         <div class="surprise-box">
           <p>„Mehr wird nicht verraten — lass dich einfach überraschen." 🌹</p>
         </div>
+        <div class="photo-box">
+          <h4>📸 Fotos & Videos</h4>
+          <div class="photo-list">
+            <div class="photo-item">Road-Trip Video in der Fahrt nach Düsseldorf</div>
+            <div class="photo-item">Padel Tennis Action-Videos — gegenseitig filmen</div>
+            <div class="photo-item">Königsallee Fotos — eleganter Look, schöne Kulisse</div>
+          </div>
+        </div>
         <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
           <div class="op"><h4>👔 Ich</h4><p>Padel: Sportklamotten. Nachmittags: dunkelblue Slimfit-Hose, cremefarbenes Leinenhemd, Chelsea Boots.</p></div>
           <div class="odiv"></div>
@@ -519,6 +566,15 @@
           <strong>🎤 Konzert-Tipp</strong>
           Clips filmen — aber auch einfach den Moment genießen. Beides 😄
         </div>
+        <div class="photo-box">
+          <h4>📸 Fotos & Videos</h4>
+          <div class="photo-list">
+            <div class="photo-item">Foto nach dem Spiel — ich komme direkt zu dir</div>
+            <div class="photo-item">Konzert-Videos & Clips von Capo auf der Bühne</div>
+            <div class="photo-item">Selfie-Video während des Konzerts — Energie der Menge</div>
+            <div class="photo-item">Foto zusammen vor oder nach dem Konzert</div>
+          </div>
+        </div>
         <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
           <div class="op"><h4>👔 Ich</h4><p>Konzert: schwarze Baggy-Jeans, Graphic Tee oder Hoodie, frische Sneaker.</p></div>
           <div class="odiv"></div>
@@ -578,6 +634,13 @@
               <h3>Wir essen in Sachsenhausen</h3>
               <p>Kleine Gassen, tolle Atmosphäre, gute Restaurants. Schöner Abschluss des Tages.</p>
             </div>
+          </div>
+        </div>
+        <div class="photo-box">
+          <h4>📸 Fotos & Videos</h4>
+          <div class="photo-list">
+            <div class="photo-item">Foto am Mainkai mit Frankfurt-Skyline</div>
+            <div class="photo-item">IKEA Showroom Foto — unser imaginäres Wohnzimmer 😄</div>
           </div>
         </div>
         <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
@@ -642,6 +705,13 @@
             </div>
           </div>
         </div>
+        <div class="photo-box">
+          <h4>📸 Fotos & Videos</h4>
+          <div class="photo-list">
+            <div class="photo-item">Foto beim Joggen am Rhein — beide in Sportklamotten</div>
+            <div class="photo-item">Die besten Fotos und Momente der Woche zusammen anschauen und lachen</div>
+          </div>
+        </div>
         <div class="outfit-box"><div style="width:100%;margin-bottom:10px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--rose)">👗 Outfit Ideen</div>
           <div class="op"><h4>👔 Ich</h4><p>Joggen: Sporthose, enges Shirt, Laufschuhe. Abends: Jeans, cleanes Shirt, Sneaker.</p></div>
           <div class="odiv"></div>
@@ -674,7 +744,7 @@
             <div class="tdot"></div>
             <div class="tcontent">
               <h3>Wir essen nochmal zusammen</h3>
-              <p>Einen Kaffee trinken, die Woche entspannt ausklingen lassen — mit einem Lächeln.</p>
+              <p>Einen Kaffee trinken, die Woche entspannt ausklingen lassen — mit einem Lächeln. Vielleicht nochmal alle Erinnerungen der Woche zusammen durchgehen 📸</p>
             </div>
           </div>
         </div>
