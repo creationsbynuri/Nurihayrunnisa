@@ -8,23 +8,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 html,body{
   background:#fff;
   font-family:'DM Sans',sans-serif;
   color:#1a0f08;
-  overflow:hidden;
   height:100%;
+  overflow:hidden;
 }
 
-body{
-  height:100dvh;
-}
+body{height:100dvh}
 
 .progress{
   position:fixed;
@@ -72,17 +66,15 @@ body{
 
 .inner{
   max-width:560px;
-  margin:0 auto;
   width:100%;
+  margin:0 auto;
   min-height:calc(100dvh - 180px);
   display:flex;
   flex-direction:column;
   justify-content:center;
 }
 
-.center{
-  text-align:center;
-}
+.center{text-align:center}
 
 .label{
   font-size:10.5px;
@@ -135,9 +127,7 @@ body{
   font-weight:300;
 }
 
-.card p + p{
-  margin-top:11px;
-}
+.card p+p{margin-top:11px}
 
 .insight{
   margin-top:16px;
@@ -184,9 +174,7 @@ body{
   visibility:hidden;
 }
 
-.btn-back.show{
-  visibility:visible;
-}
+.btn-back.show{visibility:visible}
 
 .dots{
   display:flex;
@@ -223,7 +211,6 @@ body{
 }
 
 @media(max-height:740px){
-
   .inner{
     justify-content:flex-start;
     min-height:auto;
@@ -235,9 +222,7 @@ body{
     margin-bottom:18px;
   }
 
-  .card{
-    padding:18px 18px;
-  }
+  .card{padding:18px 18px}
 
   .card p{
     font-size:13.6px;
@@ -251,6 +236,7 @@ body{
 
   .insight{
     font-size:15.5px;
+    line-height:1.4;
   }
 }
 </style>
@@ -261,338 +247,140 @@ body{
 <div class="progress" id="bar"></div>
 <div class="counter" id="counter"></div>
 
-<!-- 0 -->
 <div class="slide active" id="s0">
   <div class="inner center">
     <div class="label">Von Nuri — für Hayrunnisa</div>
-
-    <div class="big">
-      Ich mache das nicht oft.<br>
-      Aber für dich <em>schreibe ich es auf.</em>
-    </div>
-
+    <div class="big">Ich mache das nicht oft.<br>Aber für dich <em>schreibe ich es auf.</em></div>
     <div class="divider"></div>
-
-    <p class="body-text">
-      Wenn mich etwas wirklich bewegt,
-      werde ich still.
-      Ich ziehe mich zurück,
-      wirke komisch,
-      sage wenig.
-    </p>
-
-    <p class="body-text">
-      Nicht weil mir nichts daran liegt —
-      sondern weil mir zu viel daran liegt.
-    </p>
-
-    <p class="body-text">
-      Das hier ist einfach mein Versuch,
-      dir zu zeigen,
-      was wirklich in mir vorgeht.
-    </p>
+    <p class="body-text">Wenn mich etwas wirklich bewegt, werde ich still. Ich ziehe mich zurück, wirke komisch, sage nichts.</p>
+    <p class="body-text">Nicht weil mir nichts daran liegt, sondern weil mir zu viel daran liegt.</p>
+    <p class="body-text">Das hier ist mein Versuch, dir zu zeigen, was in diesen Momenten wirklich in mir passiert. Damit du mich verstehst. Wirklich.</p>
   </div>
 </div>
 
-<!-- 1 -->
 <div class="slide" id="s1">
   <div class="inner">
     <div class="label">Wie ich liebe</div>
-
-    <div class="big">
-      Wenn ich liebe,<br>
-      dann mit <em>allem.</em>
-    </div>
-
+    <div class="big">Wenn ich liebe, dann mit <em>allem.</em><br>Es gibt kein Halbgas bei mir.</div>
     <div class="card">
-      <p>
-        Ich denke an dich,
-        wenn ich morgens aufwache.
-      </p>
-
-      <p>
-        Ich plane meinen Tag so,
-        dass ich dich auch nur kurz sehen kann.
-      </p>
-
-      <p>
-        Nicht weil ich muss.
-        Sondern weil sich mein Tag
-        mit dir einfach besser anfühlt.
-      </p>
-
-      <div class="insight">
-        „Wenn ich dich liebe,
-        dreht sich meine Welt automatisch um dich.“
-      </div>
+      <p>Ich denke an dich, wenn ich morgens aufwache. Ich plane meinen Tag so, dass ich dich auch nur für fünf Minuten sehen kann — nicht weil ich muss, sondern weil sich der Tag mit dir einfach besser anfühlt.</p>
+      <p>Ich schreibe dir, wenn mir etwas Lustiges passiert. Ich denke an dich, wenn ich etwas Schönes sehe. Du bist einfach überall in meinem Kopf.</p>
+      <p>Das ist nicht gespielt. Das bin ich.</p>
+      <div class="insight">„Wenn ich dich liebe, dreht sich meine Welt um dich. Und genau das macht mich manchmal auch verletzlich."</div>
     </div>
   </div>
 </div>
 
-<!-- 2 -->
 <div class="slide" id="s2">
   <div class="inner">
     <div class="label">Der Moment</div>
-
-    <div class="big">
-      Erinnerst du dich?<br>
-      Wir waren zusammen <em>im Büro.</em>
-    </div>
-
+    <div class="big">Erinnerst du dich?<br>Wir waren zusammen <em>im Büro.</em></div>
     <div class="card">
-      <p>
-        Es war schön.
-        Wir haben Zeit vergessen,
-        geredet,
-        uns umarmt,
-        einfach zusammen existiert.
-      </p>
-
-      <p>
-        Und innerlich hatte ich mir gewünscht,
-        dass das einfach weitergeht.
-      </p>
-
-      <p>
-        Nicht dass du für mich arbeitest.
-        Nicht dass du irgendetwas leisten musst.
-      </p>
-
-      <p>
-        Einfach:
-        du lernst,
-        ich arbeite,
-        wir sind zusammen.
-      </p>
+      <p>Wir waren zusammen bei mir im Büro. Es war schön — wir haben uns umarmt, haben Zeit vergessen, haben einfach zusammen geatmet. Genau das liebe ich an uns.</p>
+      <p>Und in diesem Moment hatte ich mir so sehr gewünscht, dass das so weitergeht. Dass du am nächsten Tag wiederkommst. Nicht um für mich zu arbeiten — einfach nur um da zu sein. Du lernst, ich arbeite, wir sind zusammen.</p>
+      <p>Also habe ich dich gefragt, ob du morgen auch kommst.</p>
+      <p>Und du hast Nein gesagt.</p>
+      <p>Das war der Moment.</p>
+      <div class="insight">„Es war nicht nur ein Nein. Für mich hat sich in dieser Sekunde etwas angefühlt wie: Ich will das mehr als sie."</div>
     </div>
   </div>
 </div>
 
-<!-- 3 -->
 <div class="slide" id="s3">
   <div class="inner">
-    <div class="label">Was mich getroffen hat</div>
-
-    <div class="big">
-      Es war nicht die Absage.<br>
-      Sondern das <em>Gefühl dahinter.</em>
-    </div>
-
+    <div class="label">Was das ausgelöst hat</div>
+    <div class="big">Etwas in mir hat sich in diesem Moment <em>zusammengezogen.</em></div>
     <div class="card">
-      <p>
-        Als du meintest,
-        dass du nicht vorbeikommst,
-        hat mein Kopf plötzlich mehr daraus gemacht,
-        als es eigentlich war.
-      </p>
-
-      <p>
-        In mir kam dieses Gefühl hoch:
-        „Ich würde alles möglich machen,
-        um sie zu sehen.
-        Warum fühlt es sich nicht genauso an?“
-      </p>
-
-      <div class="insight">
-        „Ich habe dein Nein
-        kurz als Abstand gefühlt.“
-      </div>
+      <p>Nicht weil du falsch lagst. Nicht weil du etwas Böses getan hast. Sondern weil mein Kopf aus diesem Nein sofort etwas gemacht hat, was es vielleicht gar nicht war.</p>
+      <p>Mein Kopf hat gesagt: „Ich würde alles stehen und liegen lassen, um sie zu sehen. Ich plane meinen ganzen Tag um sie herum. Und sie? Sie kommt einfach nicht."</p>
+      <p>Ich weiß, dass das nicht fair ist. Ich weiß, dass du Uni-Stress hattest. Aber dieses Gefühl war da — und es hat sich in mir festgesetzt und meinen ganzen Tag vergiftet.</p>
+      <div class="insight">„Ich habe dein Nein nicht als Nein gefühlt. Ich habe es als Abstand gefühlt."</div>
     </div>
   </div>
 </div>
 
-<!-- 4 -->
 <div class="slide" id="s4">
   <div class="inner">
-    <div class="label">Was dann passiert</div>
-
-    <div class="big">
-      Mein Kopf wird dann<br>
-      plötzlich <em>zu laut.</em>
-    </div>
-
+    <div class="label">Warum ich so bin</div>
+    <div class="big">Ich bin jemand, der alles selbst in die Hand nimmt.<br><em>Überall. Nur hier nicht.</em></div>
     <div class="card">
-      <p>
-        Obwohl ich weiß,
-        dass du Uni-Stress hast
-        und nichts falsch gemacht hast,
-        setzt sich dieses Gefühl fest.
-      </p>
-
-      <p>
-        Und dann werde ich ruhig,
-        launisch,
-        demotiviert.
-      </p>
-
-      <p>
-        Nicht weil ich sauer auf dich bin —
-        sondern weil mich das emotional stärker trifft,
-        als es eigentlich sollte.
-      </p>
+      <p>Im Business kämpfe ich. Im Fußball kämpfe ich. Wenn ich ein Ziel habe, gebe ich alles — und irgendwann erreiche ich es.</p>
+      <p>Aber bei dir kann ich das nicht. Ich kann nicht einfach mehr tun und dadurch garantieren, dass du immer da bist. Ich kann deine Gefühle nicht kontrollieren, deine Zeit nicht kontrollieren, deinen Alltag nicht kontrollieren.</p>
+      <p>Und das macht mich manchmal innerlich unruhig — obwohl du gar nichts falsch machst. Weil ich zum ersten Mal bei etwas bin, das mir wirklich wichtig ist und das ich nicht steuern kann.</p>
+      <div class="insight">„Du bist das Erste in meinem Leben, bei dem Einsatz alleine nicht reicht. Und das macht mich manchmal hilflos."</div>
     </div>
   </div>
 </div>
 
-<!-- 5 -->
 <div class="slide" id="s5">
   <div class="inner">
-    <div class="label">Die eigentliche Wahrheit</div>
-
-    <div class="big">
-      Ich glaube,<br>
-      ich habe dich emotional<br>
-      zu sehr zu meinem <em>Mittelpunkt</em> gemacht.
-    </div>
-
+    <div class="label">Die echte Angst</div>
+    <div class="big">Nicht: <em>„Verlässt sie mich?"</em><br>Sondern: <em>„Bin ich tiefer drin als sie?"</em></div>
     <div class="card">
-      <p>
-        Wenn du da bist,
-        bin ich ruhig.
-      </p>
-
-      <p>
-        Wenn du nicht da bist,
-        macht mein Kopf Dinge größer,
-        als sie sind.
-      </p>
-
-      <p>
-        Und genau daran muss ich arbeiten —
-        nicht du.
-      </p>
-
-      <div class="insight">
-        „Du bist nicht das Problem.
-        Meine emotionale Abhängigkeit ist das Problem.“
-      </div>
+      <p>Das ist die Frage, die mich manchmal wach hält. Nicht laut. Aber sie ist da.</p>
+      <p>Wenn du keine Zeit hast, wenn du nicht vorbeikommen kannst — dann fragt ein kleiner Teil in mir: Würde sie dasselbe fühlen, wenn ich ihr absage? Denkt sie auch so viel an mich wie ich an sie?</p>
+      <p>Ich zweifle nicht daran, dass du mich liebst. Aber ich vergleiche manchmal meine Intensität mit deiner Art. Und dabei vergesse ich, dass du anders liebst — nicht weniger. Einfach anders.</p>
+      <div class="insight">„Ich fürchte nicht, dich zu verlieren. Ich fürchte, dass du nie weißt, wie tief ich drin bin."</div>
     </div>
   </div>
 </div>
 
-<!-- 6 -->
 <div class="slide" id="s6">
   <div class="inner">
-    <div class="label">Die Angst dahinter</div>
-
-    <div class="big">
-      Nicht:<br>
-      „Verlier ich sie?“<br><br>
-      Sondern:<br>
-      <em>„Liebe ich tiefer?“</em>
-    </div>
-
+    <div class="label">Was ich von mir verlange</div>
+    <div class="big">Ich will dich lieben,<br>ohne dich damit zu <em>belasten.</em></div>
     <div class="card">
-      <p>
-        Ich zweifle nicht daran,
-        dass du mich liebst.
-      </p>
-
-      <p>
-        Aber manchmal frage ich mich,
-        ob ich emotional einfach viel intensiver drin bin.
-      </p>
-
-      <p>
-        Und genau dieser Gedanke
-        macht mich manchmal traurig.
-      </p>
+      <p>Ich weiß, dass es sich erdrückend anfühlen kann, wenn jemand so viel investiert. Wenn jemand sagt: „Meine ganze Welt dreht sich um dich." Das klingt romantisch — aber es kann auch Druck sein.</p>
+      <p>Und ich will dir keinen Druck machen. Ich will, dass du dich bei mir frei fühlst. Dass du zur Uni gehen kannst, ohne ein schlechtes Gewissen zu haben. Dass du deinen Alltag lebst, ohne Angst, mich damit zu verletzen.</p>
+      <p>Ich arbeite daran. Jeden Tag ein bisschen mehr.</p>
+      <div class="insight">„Ich will stark genug sein, dass mein Glück nicht nur durch deine Anwesenheit existiert — aber ehrlich genug, um zuzugeben, dass ich da noch nicht bin."</div>
     </div>
   </div>
 </div>
 
-<!-- 7 -->
 <div class="slide" id="s7">
   <div class="inner">
-    <div class="label">Was ich eigentlich will</div>
-
-    <div class="big">
-      Ich will dich lieben,<br>
-      ohne dich damit zu <em>belasten.</em>
-    </div>
-
+    <div class="label">Was ich mir wünsche</div>
+    <div class="big">Kein großes Versprechen.<br>Nur <em>gemeinsam wachsen.</em></div>
     <div class="card">
-      <p>
-        Ich will nicht,
-        dass du dich schuldig fühlst,
-        wenn du zur Uni gehst
-        oder dein eigenes Ding machst.
-      </p>
-
-      <p>
-        Ich will,
-        dass du dich frei fühlst.
-      </p>
-
-      <p>
-        Und gleichzeitig wollte ich ehrlich sein,
-        damit du verstehst,
-        warum ich manchmal still werde.
-      </p>
-
-      <div class="insight">
-        „Ich arbeite gerade daran,
-        gesund zu lieben —
-        nicht weniger.“
-      </div>
+      <p>Ich träume davon, dass wir beide an unseren Zielen arbeiten — zusammen. Du an deiner Uni, ich an meinen Projekten. Nicht weil wir müssen, sondern weil wir es wollen.</p>
+      <p>Dass wir uns gegenseitig wirklich sehen. Dass du weißt, woran ich kämpfe, und ich weiß, was dich beschäftigt. Dass wir kein Paar sind, das nebeneinander lebt — sondern miteinander.</p>
+      <p>Das ist mein Bild von uns. Und es macht mir Angst, wenn ich das Gefühl bekomme, dass wir gerade weiter weg davon sind.</p>
     </div>
   </div>
 </div>
 
-<!-- 8 -->
 <div class="slide" id="s8">
   <div class="inner center">
     <div class="label">Und jetzt weißt du es</div>
-
-    <div class="big">
-      Du musst dich nicht <em>ändern.</em><br>
-      Ich muss wachsen.
-    </div>
-
+    <div class="big">Du musst dich nicht <em>ändern.</em><br>Ich muss wachsen.</div>
     <div class="divider"></div>
-
-    <p class="body-text">
-      Du machst nichts falsch.
-    </p>
-
-    <p class="body-text">
-      Ich lerne nur gerade,
-      mit meiner eigenen Intensität umzugehen.
-    </p>
-
-    <p class="body-text">
-      Ich wollte einfach,
-      dass du verstehst,
-      was manchmal in mir passiert.
-    </p>
-
+    <p class="body-text">Ich bin stolz auf dich. Auf alles, was du tust. Auf die Frau, die du bist. Du machst nichts falsch — ich lerne nur gerade, mit meiner eigenen Intensität umzugehen.</p>
+    <p class="body-text">Ich wollte nur, dass du weißt, was in mir vorgeht. Damit du mich verstehst, wenn ich still werde. Damit du weißt, dass es niemals deine Schuld ist.</p>
+    <p class="body-text">Ich liebe dich. Mehr als ich es meistens zeigen kann.</p>
     <div class="signature">— Nuri ❤</div>
   </div>
 </div>
 
 <div class="nav">
-
   <button class="btn-back" id="bBack" onclick="go(-1)">←</button>
-
   <div class="dots" id="dots"></div>
-
   <button class="btn-next" id="bNext" onclick="go(1)">
     <span id="lbl">Weiter</span>
     <span>→</span>
   </button>
-
 </div>
 
 <script>
-const N = 9;
-let c = 0;
+const N=9;
+let c=0;
 
-const bar = document.getElementById('bar');
-const counter = document.getElementById('counter');
-const bBack = document.getElementById('bBack');
-const bNext = document.getElementById('bNext');
-const lbl = document.getElementById('lbl');
-const dotsEl = document.getElementById('dots');
+const bar=document.getElementById('bar');
+const counter=document.getElementById('counter');
+const bBack=document.getElementById('bBack');
+const bNext=document.getElementById('bNext');
+const lbl=document.getElementById('lbl');
+const dotsEl=document.getElementById('dots');
 
 for(let i=0;i<N;i++){
   const d=document.createElement('div');
@@ -601,28 +389,21 @@ for(let i=0;i<N;i++){
 }
 
 function render(){
-
   document.querySelectorAll('.dot').forEach((d,i)=>{
     d.classList.toggle('on',i===c);
   });
 
   bar.style.width=((c+1)/N*100)+'%';
-
   counter.textContent=(c+1)+' / '+N;
-
   bBack.classList.toggle('show',c>0);
 
   const last=c===N-1;
-
   lbl.textContent=last?'Fertig ❤':'Weiter';
-
   bNext.style.background=last?'#b86a50':'#1a0f08';
 }
 
 function go(dir){
-
   const nc=c+dir;
-
   if(nc<0||nc>=N)return;
 
   const cur=document.getElementById('s'+c);
@@ -638,10 +419,7 @@ function go(dir){
 
   const next=document.getElementById('s'+c);
 
-  next.style.transform=dir>0
-    ? 'translateX(50px)'
-    : 'translateX(-50px)';
-
+  next.style.transform=dir>0?'translateX(50px)':'translateX(-50px)';
   next.style.opacity='0';
 
   requestAnimationFrame(()=>{
@@ -664,9 +442,7 @@ document.addEventListener('touchstart',e=>{
 });
 
 document.addEventListener('touchend',e=>{
-
   const d=sx-e.changedTouches[0].clientX;
-
   if(Math.abs(d)>50){
     go(d>0?1:-1);
   }
